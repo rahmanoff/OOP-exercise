@@ -52,17 +52,9 @@ class Man extends Human {
 }
 
 const dog = new Dog ('Toby', 'male', 'woof-woof');
-const cat = new Cat ('Mary', 'female', 'meow');
+const cat = new Cat ('Alice', 'female', 'meow');
+const woman = new Woman ('Mary', 'Hi, John');
 
-const woman = {
-      species: 'woman',
-      name: 'Mary',
-      gender: 'female',
-      legs: 2,
-      hands: 2,
-      saying: 'Hi, John!',
-      friends: ['John', 'Alice', 'Toby'],
-   };
 const man = {
       species: 'man',
       name: 'John',
