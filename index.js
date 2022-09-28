@@ -12,7 +12,12 @@ class Inhabitant {
    }
 }
 
-
+class Animal extends Inhabitant {
+   constructor (species, name, gender, saying) {
+      super (species, name, gender, saying);
+      this.legs = 4;
+   }
+}
 
 const dog = {
       species: 'dog',
