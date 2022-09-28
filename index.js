@@ -19,6 +19,12 @@ class Animal extends Inhabitant {
    }
 }
 
+class Dog extends Animal {
+   constructor (name, gender, saying) {
+      super('dog', name, gender, saying);
+   }
+}
+
 const dog = {
       species: 'dog',
       name: 'Toby',
