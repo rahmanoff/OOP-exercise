@@ -39,6 +39,12 @@ class Human extends Inhabitant {
    }
 }
 
+class Woman extends Human {
+   constructor (name, saying) {
+      super (name, 'female', saying);
+   }
+}
+
 const dog = {
       species: 'dog',
       name: 'Toby',
