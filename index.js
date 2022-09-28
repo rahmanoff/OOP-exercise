@@ -1,13 +1,18 @@
 import { print } from './js/lib.js';
-/* Refer to https://github.com/OleksiyRudenko/a-tiny-JS-world for the task details
-   Complete the below for code reviewers' convenience:
-
-   Code repository: _put repo URL here_
-   Web app: _put project's github pages URL here_
-   */
 
 // ======== OBJECTS DEFINITIONS ========
 // Define your objects here
+
+class Inhabitant {
+   constructor(species, name, gender,saying) {
+      this.species = species;
+      this.name = name;
+      this.gender = gender;
+      this.saying = saying;
+   }
+}
+
+
 
 const dog = {
       species: 'dog',
