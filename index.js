@@ -31,6 +31,14 @@ class Cat extends Animal {
    }
 }
 
+class Human extends Inhabitant {
+   constructor (name, gender, saying) {
+      super('human', name, gender, saying);
+      this.hands = 2;
+      this.legs = 2;
+   }
+}
+
 const dog = {
       species: 'dog',
       name: 'Toby',
