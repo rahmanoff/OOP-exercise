@@ -21,7 +21,13 @@ class Animal extends Inhabitant {
 
 class Dog extends Animal {
    constructor (name, gender, saying) {
-      super('dog', name, gender, saying);
+      super ('dog', name, gender, saying);
+   }
+}
+
+class Cat extends Animal {
+   constructor (name, gender, saying) {
+      super ('cat', name, gender, saying);
    }
 }
 
