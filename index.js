@@ -51,10 +51,10 @@ class Man extends Human {
    }
 }
 
-const dog = new Dog ('Toby', 'male', 'woof-woof');
-const cat = new Cat ('Alice', 'female', 'meow');
-const woman = new Woman ('Mary', 'Hi, John');
-const man = new Man ('John', 'Hi, Mary');
+const toby = new Dog ('Toby', 'male', 'woof-woof');
+const alice = new Cat ('Alice', 'female', 'meow');
+const mary = new Woman ('Mary', 'Hi, John');
+const john = new Man ('John', 'Hi, Mary');
 
 // ======== OUTPUT ========
 /* Use print(message) for output.
@@ -75,7 +75,7 @@ const man = new Man ('John', 'Hi, Mary');
    print('human; <strong>John</strong>; male; 2; 2; <em>Hello world!</em>; Rex, Tom, Jenny', 'div');
    */
 
-const inhabitants = [dog, cat, woman, man];
+const inhabitants = [toby, alice, mary, john];
 const props = ['species', 'name', 'gender', 'legs', 'hands', 'saying'];
    
 inhabitants.map((item) => {
