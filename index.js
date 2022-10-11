@@ -4,15 +4,15 @@ import { print } from './js/lib.js';
 // Define your objects here
 
 class Inhabitant {
-   constructor(species, name, gender, legs, saying) {
+   constructor(species, name, gender, saying, legs) {
       this.species = species;
       this.name = name;
       this.gender = gender;
-      this.legs = legs;
       this.saying = saying;
+      this.legs = legs;
    }
    printOut() {
-      return ['species', 'name', 'gender', 'legs', 'saying'].map(
+      return ['species', 'name', 'gender', 'saying', 'legs',].map(
          (prop) => `${prop}: ${this[prop]}`
       ).join('; ');
    }
@@ -22,12 +22,6 @@ class Animal extends Inhabitant {
    constructor(species, name, gender, legs, saying) {
       super(species, name, gender, legs, saying);
       this.legs = 4;
-   }
-   printOut() {
-      return [
-         super.printOut(),
-         ...[].map((prop) => `${prop}: ${this[prop]}`),
-      ].join('; ');
    }
 }
 
@@ -44,16 +38,12 @@ class Cat extends Animal {
 }
 
 class Human extends Inhabitant {
-   constructor(name, gender, legs, hands, saying) {
-      super('human', name, gender, legs, hands, saying);
-      this.legs = 2;
+   constructor(name, gender, saying, legs = 2) {
+      super('human', name, gender, saying, legs);
       this.hands = 2;
    }
-
    printOut() {
-      return ['species', 'name', 'gender', 'legs', 'hands', 'saying'].map(
-         (prop) => `${prop}: ${this[prop]}`
-      ).join('; ');
+      return `${super.printOut()}; hands: ${this.hands}`;
    }
 }
 
